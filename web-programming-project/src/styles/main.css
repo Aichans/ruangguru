@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(120deg, #4f8cff 0%, #6ee7b7 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    width: 100%;
+}
+
+.container, #auth-container {
+    background: rgba(255,255,255,0.92);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    padding: 40px 32px;
+    width: 350px;
+    margin: 24px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0 0 24px 0;
+    font-size: 2.8rem;
+    color: #fff;
+    text-shadow: 2px 2px 12px #0003;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #4f8cff;
+    width: 100%;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #b3b3b3;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px #4f8cff22;
+}
+
+form input:focus {
+    border-color: #4f8cff;
+    box-shadow: 0 2px 8px #4f8cff44;
+    outline: none;
+}
+
+button[type="submit"], .button {
+    width: 220px; /* Fixed width for all buttons */
+    max-width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #4f8cff 60%, #6ee7b7 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #4f8cff44;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    margin-bottom: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button + .button {
+    margin-left: 16px; /* Space between side-by-side buttons */
+}
+
+button[type="submit"]:hover, .button:hover {
+    background: linear-gradient(90deg, #6ee7b7 0%, #4f8cff 100%);
+    box-shadow: 0 4px 16px #4f8cff44;
+    transform: translateY(-2px) scale(1.03);
+}
+
+p {
+    color: #333;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px #0002;
+}
+
+@media (max-width: 400px) {
+    button[type="submit"], .button {
+        width: 100%;
+    }
+}

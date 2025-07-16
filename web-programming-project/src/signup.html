@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <div id="auth-container">
+        <div id="signup-form">
+            <form>
+                <label for="signup-name">Full Name:</label>
+                <input type="text" id="signup-name" name="signup-name" required>
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="signup-email" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password" required>
+                <label for="signup-confirm-password">Confirm Password:</label>
+                <input type="password" id="signup-confirm-password" name="signup-confirm-password" required>
+                <button type="submit">Create Account</button>
+            </form>
+            <p style="text-align:center; margin-top:16px;">
+                <a class="button" href="login.html">Back to Login</a>
+            </p>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
